@@ -1,0 +1,26 @@
+/*Pedir el radio de un círculo y calcular su área. A=PI*r^2. */
+package practicasverano;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author joseoropesatirado
+ */
+public class PracticasVerano {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        double r;
+        
+        
+        System.out.println("Introduce el valor del radio: ");
+        r=reader.nextDouble();
+        
+        System.out.println("El area del circulo es: "+ Math.PI*Math.pow(r, 2));
+
+    }
+    
+    // Hemos utilizado la clase Math.PI para calcular el valor de PI y Math.pow(base,potencia) para calcular la potencia
+    
