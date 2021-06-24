@@ -1,0 +1,37 @@
+/* 7. Pedir dos números y decir cual es el mayor. */
+package practicasverano;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author joseoropesatirado
+ */
+public class PracticasVerano {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        int n1, n2;
+        
+        
+        System.out.println("Introduce el valor 1: ");
+        n1=reader.nextInt();
+        
+        System.out.println("Introduce el valor 2: ");
+        n2=reader.nextInt();
+       
+        
+        if (n1>n2){
+            
+            System.out.println("El numero "+n1 +" es mayor que "+n2);
+            
+        } else{
+            
+            System.out.println("El numero "+n1 +" es menor que "+n2);
+            
+        }
+
+    }   
+
+}
