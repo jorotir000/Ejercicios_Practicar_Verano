@@ -1,0 +1,36 @@
+/* 5. Pedir un número e indicar si es positivo o negativo.. */
+package practicasverano;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author joseoropesatirado
+ */
+public class PracticasVerano {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        int n1;
+        
+        
+        System.out.println("Introduce un valor: ");
+        n1=reader.nextInt();
+
+        
+        if (n1>0){
+            
+            System.out.println("El numero "+n1 +" es un numero positivo");
+            
+        } else{
+            
+            System.out.println("El numero introducido es negativo");
+            
+        }
+
+    }
+    
+    
+
+}
