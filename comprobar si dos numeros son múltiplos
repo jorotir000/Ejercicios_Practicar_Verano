@@ -1,0 +1,37 @@
+/* 6. Pedir dos números y decir si uno es múltiplo del otro.. */
+package practicasverano;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author joseoropesatirado
+ */
+public class PracticasVerano {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        int n1, n2;
+        
+        
+        System.out.println("Introduce el valor 1: ");
+        n1=reader.nextInt();
+        
+        System.out.println("Introduce el valor 2: ");
+        n2=reader.nextInt();
+       
+        
+        if (n1%n2==0){
+            
+            System.out.println("El numero "+n1 +" es multiplo de "+n2);
+            
+        } else{
+            
+            System.out.println("Los numero introducidos no son multiplos");
+            
+        }
+
+    }   
+
+}
