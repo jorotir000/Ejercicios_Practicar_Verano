@@ -1,0 +1,50 @@
+/* 14. Pedir una nota de 0 a 10 y mostrarla de la forma: Insuficiente, Suficiente, Bien... */
+package practicasverano;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author joseoropesatirado
+ */
+public class PracticasVerano {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        int n1;
+
+        System.out.println("Introduce un: ");
+        n1 = reader.nextInt();
+
+        String x = Integer.toString(n1);
+
+        if (n1 <=10) {
+
+            switch (n1) {
+
+                case 10: System.out.println("Sobresaliente - Matricula de honor");
+                    break;
+                
+                case 9: System.out.println("Sobresaliente - 9");
+                    break;
+                
+                case 8: System.out.println("Notable alto");
+                    break;
+                
+                case 7: System.out.println("Notable bajo");
+                    break;
+                    
+                case 6: System.out.println("Bien");
+                    break;
+                    
+                case 5: System.out.println("Suficientes");
+                    break;
+                    
+                default: System.out.println("Suspenso");
+
+            }
+
+        }
+
+    }
