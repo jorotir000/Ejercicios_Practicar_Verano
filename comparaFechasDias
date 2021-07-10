@@ -1,0 +1,80 @@
+/* 19. Pedir dos fechas y mostrar el número de días que hay de diferencia. Suponiendo todos los meses de 30 días. */
+package practicasverano;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author joseoropesatirado
+ */
+public class PracticasVerano {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+        int dia, mes, año;
+
+        System.out.println("Introduce un dia: ");
+        dia = reader.nextInt();
+
+        System.out.println("Introduce un mes: ");
+        mes = reader.nextInt();
+        
+        System.out.println("Introduce un año entre 1950 y 2022: ");
+        año = reader.nextInt();
+        
+        System.out.println("\n");
+        System.out.println("A continuación introduce una segunda fecha");
+        
+        //DEFINIMOS UNA VARIABLE PARA LA SEGUNDA FECHA
+        int dia1, mes1, año1;
+        
+        int fecha, fecha1;
+
+        System.out.println("Introduce un dia: ");
+        dia1 = reader.nextInt();
+
+        System.out.println("Introduce un mes: ");
+        mes1 = reader.nextInt();
+        
+        System.out.println("Introduce un año entre 1950 y 2022: ");
+        año1 = reader.nextInt();
+        
+        
+        if (dia <=30 && dia1 <=30){
+            
+            if (mes <=12 && mes1 <=12){
+                
+                if (año>=1950 && año1>=1950 && año<=2022 && año1<=2022){
+                    
+                    //Realizamos el calculo multiplicando los meses por 30 dias y los años por 360 dias
+                    mes= mes*30;
+                    año=año*360;
+                    
+                    fecha=dia+mes+año;
+                    mes1=mes1*30;
+                    año1=año1*360;
+                    
+                    fecha1=dia1+mes1+año1;
+                    
+                    System.out.println("La diferencia de dias entre las fechas introducidas es de: "+(fecha-fecha1));
+                    
+                } else {
+                    
+                    System.out.println("El año no esta comprendido entre 1950 y 2022");
+                    
+                }
+                
+            }else {
+                
+                System.out.println("El numero de meses no puede ser mayor de 12");
+                
+            }
+            
+        }else {
+            
+            System.out.println("El día no puede ser superior a 30");
+            
+        }
+    }
+}
